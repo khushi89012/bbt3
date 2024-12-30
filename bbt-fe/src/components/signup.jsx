@@ -16,7 +16,7 @@ const Signup = () => {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/auth/signup', {
+      const response = await axios.post('https://bbt-api.vercel.app/auth/signup', {
         firstName,
         lastName,
         email,
