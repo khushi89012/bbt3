@@ -11,7 +11,7 @@ const Listing = () => {
     // Fetch video data from API using axios
     const fetchVideos = async () => {
       try {
-        const response = await axios.get('http://localhost:5000/getAll'); // Make GET request using Axios
+        const response = await axios.get('https://bbt-api.vercel.app/getAll'); // Make GET request using Axios
         setVideos(response.data.data); // Assuming the response contains the list of videos
         setLoading(false);
       } catch (err) {
